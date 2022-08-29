@@ -1,0 +1,9 @@
+<script>
+  addEventListener("DOMContentLoaded", function(event) {
+    document.querySelectorAll(".copy-on-click").forEach(function(el) {
+      el.addEventListener("click", function(e) {
+        navigator.clipboard.writeText(el.innerText);
+      })
+    })
+  })
+</script>
